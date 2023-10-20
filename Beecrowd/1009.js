@@ -1,5 +1,5 @@
 /*------------------ 1009 - Salário com Bônus------------------*/
-// //Variáveis
+//Variáveis
 let nome = "Joao"
 let salarioFixo = 500.00
 let valorDeVendas = 1230.30
