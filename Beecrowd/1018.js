@@ -1,33 +1,34 @@
-/*------------------ 1050 - DDD ------------------*/
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+/*------------------ 1018 - Cédulas ------------------*/
+//var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 
-var num = parseInt(lines.shift())
+let valor = 576;
+//let valor = parseInt(input);
+console.log(valor);
 
-if (num == 61){
-    console.log("Brasilia");
-}
-else if (num == 71){
-    console.log("Salvador");
-}
-else if (num == 11){
-    console.log("Sao Paulo");
-}
-else if (num == 21){
-    console.log("Rio de Janeiro");
-}
-else if (num == 32){
-    console.log("Juiz de Fora");
-}
-else if (num == 19){
-    console.log("Campinas");
-}
-else if (num == 27){
-    console.log("Vitoria");
-}
-else if (num == 31){
-    console.log("Belo Horizonte");
-}
-else{
-    console.log("DDD nao cadastrado");
-}
+let notas = parseInt(valor / 100);
+console.log(notas + " nota(s) de R$ 100,00");
+valor = valor % 100
+
+notas = parseInt(valor / 50);
+console.log(notas + " nota(s) de R$ 50,00");
+valor = valor % 50
+
+notas = parseInt(valor / 20);
+console.log(notas + " nota(s) de R$ 20,00");
+valor = valor % 20
+
+notas = parseInt(valor / 10);
+console.log(notas + " nota(s) de R$ 10,00");
+valor = valor % 10
+
+notas = parseInt(valor / 5);
+console.log(notas + " nota(s) de R$ 5,00");
+valor = valor % 5
+
+notas = parseInt(valor / 2);
+console.log(notas + " nota(s) de R$ 2,00");
+valor = valor % 2
+
+notas = parseInt(valor / 1);
+console.log(notas + " nota(s) de R$ 1,00");
+valor = valor % 1
