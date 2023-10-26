@@ -1,16 +1,20 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+/*------------------ 1020 - Idade em Dias ---------------*/
 
-let totalDias = parseInt(lines.shift())
+// var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+// var lines = input.split('\n');
 
-let qtdAnos = totalDias / 365
-totalDias = totalDias % 365
+//let totalDias = parseInt(lines.shift())
 
-let qtdMeses = totalDias / 30
-totalDias = totalDias % 30
+let totalDias = 400;
 
-let qtdDias = totalDias
+let qtdAnos = totalDias / 365;
+totalDias = totalDias % 365;
 
-console.log(`${Math.floor(qtdAnos)} ano(s)`)
-console.log(`${Math.floor(qtdMeses)} mes(es)`)
-console.log(`${Math.floor(qtdDias)} dia(s)`)
+let qtdMeses = totalDias / 30;
+totalDias = totalDias % 30;
+
+let qtdDias = totalDias;
+
+console.log(`${Math.floor(qtdAnos)} ano(s)`);
+console.log(`${Math.floor(qtdMeses)} mes(es)`);
+console.log(`${Math.floor(qtdDias)} dia(s)`);

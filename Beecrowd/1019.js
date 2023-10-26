@@ -1,4 +1,4 @@
-/*------------------ 1020 - Idade em Dias ---------------*/
+/*------------------ 1019 - Conversão do Tempo ---------------*/
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
