@@ -1,4 +1,4 @@
-/*------------------ 1059 - Números Positivos ---------------*/
+/*------------------ 1059 - Números Pares ---------------*/
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
